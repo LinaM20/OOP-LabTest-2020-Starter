@@ -46,6 +46,8 @@ public class Gantt extends PApplet
 			text(t.getTask(), x, y);
 			
 		}
+
+		
 		
 			
 
