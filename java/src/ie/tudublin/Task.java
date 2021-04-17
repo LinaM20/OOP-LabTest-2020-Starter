@@ -2,19 +2,17 @@ package ie.tudublin;
 
 import processing.data.TableRow;
 
-public class Task {
-
-    //private fields
+public class Task
+{
     private String name;
     private int start;
     private int end;
 
-    //public accessor methods
     public String getName() {
         return name;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -22,7 +20,7 @@ public class Task {
         return start;
     }
 
-    public void setStart() {
+    public void setStart(int start) {
         this.start = start;
     }
 
@@ -30,7 +28,7 @@ public class Task {
         return end;
     }
 
-    public void setEnd() {
+    public void setEnd(int end) {
         this.end = end;
     }
 
@@ -41,7 +39,8 @@ public class Task {
         this.end = end;
     }
 
-    //constructor method to take processing tablerow as a parameter
+
+
     public Task(TableRow tr)
     {
         this(tr.getString("Task"), tr.getInt("Start"), tr.getInt("End"));
@@ -49,9 +48,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task [end =" + end + ", name=" + " , start=" + start + "]";
+        return "Task [end=" + end + ", name=" + name + ", start=" + start + "]";
     }
-
-
+    
 }
-
